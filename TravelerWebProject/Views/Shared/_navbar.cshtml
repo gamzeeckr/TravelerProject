@@ -1,0 +1,51 @@
+﻿
+
+<section id="navwrapper" class="hoc clear">
+
+    <nav id="mainav">
+        <ul class="clear">
+            <li class="active"><a href="/Home/HomePage/">Anasayfa</a></li>
+            <li>
+                <a class="drop" href="#">YURT İÇİ</a>
+                <ul>
+                    @foreach (var item in Model.Cities)
+                    {
+                        <li><a href="/Domestic/Index/@item.CityId">@item.City.CityName</a></li>
+                    }
+                </ul>
+            </li>
+            <li>
+                <a class="drop" href="#">YURT DIŞI</a>
+                <ul>
+                    <li><a href="#">Level 2</a></li>
+                    <li>
+                        <a class="drop" href="#">Level 2 + Drop</a>
+                        <ul>
+                            <li><a href="#">Level 3</a></li>
+                            <li><a href="#">Level 3</a></li>
+                            <li><a href="#">Level 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Level 2</a></li>
+                </ul>
+            </li>
+            <li><a href="/Home/GalleryPage/">GALERİ</a></li>
+            <li><a href="#">YOL GÜNLÜĞÜ</a></li>
+            <li><a href="#">HAKKIMIZDA</a></li>
+            <li><a href="#">İLETİŞİM</a></li>
+            <li><a href="/Login/WriterLogin/">GİRİŞ YAP</a></li>
+        </ul>
+    </nav>
+    <!-- ################################################################################################ -->
+    <div id="searchform">
+        <div>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Quick Search:</legend>
+                    <input type="text" placeholder="Arama Yapın">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</section>

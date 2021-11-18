@@ -1,0 +1,19 @@
+﻿@using EntityLayer.Concrete
+@model List<Heading>
+
+<section id="introblocks">
+    <ul class="nospace group">
+        @foreach (var item in Model)
+        {
+            <li class="one_third">
+                <figure>
+                    <a class="imgover" href="#"><img src="@item.HeadingImage" alt=""></a>
+                    <figcaption>
+                        <h6 class="heading">@item.HeadingName - @item.City.CityName</h6>
+                        <p>@item.HeadingDescription.Substring(0, 300)...</p>
+                    </figcaption>
+                </figure>
+            </li>
+        }
+    </ul>
+</section>

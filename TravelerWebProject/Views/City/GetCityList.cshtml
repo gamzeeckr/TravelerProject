@@ -1,0 +1,25 @@
+﻿@using EntityLayer.Concrete
+@model List<City>
+@{
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Ad</th>
+        <th>Durum</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CityId</td>
+            <td>@item.CityName</td>
+            <td>@item.CityStatus</td>
+        </tr>
+    }
+</table>
+<a href="/City/AddCity" class="btn btn-info">Yeni Kategori</a>

@@ -1,0 +1,25 @@
+﻿@model EntityLayer.Concrete.City
+@{
+    ViewBag.Title = "UpdateCity";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>Şehir Güncelleme Sayfası</h2>
+
+@using (Html.BeginForm("UpdateCity", "AdminCity", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Şehir ID")
+        @Html.TextBoxFor(x => x.CityId, new { @class = "form-control" })
+        <br />
+        @Html.Label("Şehir Adı")
+        @Html.TextBoxFor(x => x.CityName, new { @class = "form-control" })
+        <br />
+        @Html.Label("Şehir Açıklaması")
+        @Html.TextAreaFor(x => x.CityDescription, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info">Güncelle</button>
+    </div>
+
+}

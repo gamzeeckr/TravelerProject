@@ -1,0 +1,55 @@
+﻿@model TravelerWebProject.Models.ViewModel
+
+<div class="bgded overlay" style="background-image: url('/Templete1/foxclore/images/demo/backgrounds/banner.jpg'); ">
+
+    <header id="header" class="hoc clear">
+        <div id="logo" class="one_quarter first">
+            <h1><a href="/Home/HomePage/">Gezi Rehberi</a></h1>
+
+        </div>
+
+    </header>
+    <section id="navwrapper" class="hoc clear">
+
+        <nav id="mainav">
+            <ul class="clear">
+                <li class="active"><a href="/Home/HomePage/">Anasayfa</a></li>
+                <li>
+                    <a class="drop" href="#">YURT İÇİ</a>
+                    <ul>
+                        @foreach (var item in Model.Cities)
+                        {
+                            <li><a href="/Domestic/Index/@item.CityId">@item.CityName</a></li>
+                        }
+                    </ul>
+                </li>
+                <li>
+                    <a class="drop" href="#">YURT DIŞI</a>
+                    <ul>
+                        <li><a href="#">BOŞ</a></li>
+                        <li><a href="#">BOŞ</a></li>
+                        <li><a href="#">BOŞ</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="/Home/GalleryPage/">GALERİ</a></li>
+                <li><a href="#">YOL GÜNLÜĞÜ</a></li>
+                <li><a href="/Home/AboutMePage/">HAKKIMIZDA</a></li>
+                <li><a href="/Home/ContactPage/">İLETİŞİM</a></li>
+                <li><a href="/Login/WriterLogin/">GİRİŞ YAP</a></li>
+            </ul>
+        </nav>
+        <!-- ################################################################################################ -->
+        <div id="searchform">
+            <div>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Quick Search:</legend>
+                        <input type="text" placeholder="Arama Yapın">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    </div>

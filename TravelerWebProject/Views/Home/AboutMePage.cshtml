@@ -1,0 +1,169 @@
+﻿@model TravelerWebProject.Models.ViewModel
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+    <title>Galeri</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="/Templete1/foxclore/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+    <div class="bgded overlay" style="background-image: url('/Templete1/foxclore/images/demo/backgrounds/banner.jpg'); ">
+
+        <header id="header" class="hoc clear">
+            <div id="logo" class="one_quarter first">
+                <h1><a href="/Home/HomePage/">Gezi Rehberi</a></h1>
+
+            </div>
+
+        </header>
+        <section id="navwrapper" class="hoc clear">
+
+            <nav id="mainav">
+                <ul class="clear">
+                    <li class="active"><a href="/Home/HomePage/">Anasayfa</a></li>
+                    <li>
+                        <a class="drop" href="#">YURT İÇİ</a>
+                        <ul>
+                            @foreach (var item in Model.Cities)
+                            {
+                                <li><a href="/Domestic/Index/@item.CityId">@item.CityName</a></li>
+                            }
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="drop" href="#">YURT DIŞI</a>
+                        <ul>
+                            <li><a href="#">BOŞ</a></li>
+                            <li><a href="#">BOŞ</a></li>
+                            <li><a href="#">BOŞ</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="/Home/GalleryPage/">GALERİ</a></li>
+                    <li><a href="#">YOL GÜNLÜĞÜ</a></li>
+                    <li><a href="/Home/AboutMePage/">HAKKIMIZDA</a></li>
+                    <li><a href="/Home/ContactPage/">İLETİŞİM</a></li>
+                    <li><a href="/Login/WriterLogin/">GİRİŞ YAP</a></li>
+                </ul>
+            </nav>
+            <!-- ################################################################################################ -->
+            <div id="searchform">
+                <div>
+                    <form action="#" method="post">
+                        <fieldset>
+                            <legend>Quick Search:</legend>
+                            <input type="text" placeholder="Arama Yapın">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="wrapper row3">
+        <main class="hoc container clear">
+            <!-- main body -->
+            <div class="content">
+                <!-- ################################################################################################ -->
+                <div id="about">
+                    <figure>
+                        <div class="col-xs-12">
+                            <div class="tm-home-container-outer">
+                                <div class="tm-home-container">
+                                    <div class="tm-home-title-container" style="background-color:white">
+                                        <h2 class="tm-text-title text-xs-center tm-home-title center" style="color:black;">HAKKIMIZDA</h2>
+                                    </div>
+                                    <hr />
+                                    <div class="tm-home-description-container">
+                                        <div class="text-xs-left tm-textbox">
+                                            <center>
+                                                <p class="tm-text tm-home-description text-center" style="color:black;font-size:20px;">
+
+                                                    🎈Gezi Rehberi' ne Hoşgeldiniz🎈🎈
+                                                    <br /><br />
+
+
+                                                    Herkese merhaba,
+                                                    <br /><br />
+
+                                                    2011 yılından beri yürüdüğüm yolda son 3-4 senemi daha kapsamlı gezilere ayırabilir duruma geldim, öğrencilik yıllarımda da İstanbul'u dip köşe gezdim 😊 Şimdi de gezilerime vakit buldukça devam ediyorum. Ve yeni yerler keşfetmeye bayılıyorum.
+                                                    <br /><br />
+                                                    Şimdilik "ben ne yapıyorum, neden/nasıl yapıyorum"u anlatmak ve gözümden dünyayı göstermek için buradayım, bu yolculukta okuyarak, hatta uygulayarak bana eşlik ederseniz ve en az benim kadar zevk alırsanız çok mutlu olurum!
+                                                    <br /><br />
+                                                    Sizde keşfettiğiniz yerleri paylaşmak istiyorsanız lütfen sayfama üye olun beraber bu heyecanı yaşayalım.Şimdiden tanıştığıma memnun oldum, iyi uçuşlar!!
+
+
+                                                </p>
+                                            </center>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tm-home-container-bg"></div>
+                            </div>
+                        </div>
+
+                    </figure>
+                </div>
+               
+            </div>
+        </main>
+    </div>
+    @*<div class="bgded overlay row4" style="background-image: url('/Templete1/foxclore/images/demo/backgrounds/contact-background-1-1.jpg');">
+        <footer id="footer" class="hoc clear">
+            <div class="center btmspace-50">
+                <h6 class="heading">SOSYAL MEDYA HESAPLARIMIZ</h6>
+                <ul class="faico clear">
+                    <li><a class="faicon-dribble" href="#"><i class="fab fa-dribbble"></i></a></li>
+                    <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a class="faicon-google-plus" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="faicon-vk" href="#"><i class="fab fa-vk"></i></a></li>
+                </ul>
+                <p class="nospace">Bizi Sosyal Medya Hesaplarımızdan Takip Edebilirsiniz.</p>
+            </div>
+
+            <hr class="btmspace-50">
+
+            <div class="center">
+                <h6 class="heading">İLETİŞİM</h6>
+                <form action="#" method="post" style="margin-left:210px;">
+                    <fieldset>
+                        <legend>Newsletter:</legend>
+                        <input class="btmspace-15" type="text" value="" style="width:700px;" placeholder="Name">
+                        <input class="btmspace-15" type="text" value="" style="width:700px" ; placeholder="Email">
+                        <textarea placeholder="Mesajınız" style="width:700px;height:200px;"></textarea>
+                        <br />
+                        <button type="submit" value="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </footer>
+    </div>*@
+
+    <div class="wrapper row5" style="margin-top:100px;">
+        <div id="copyright" class="hoc clear">
+
+            <p class="center">&copy; 2021 - Tüm Hakları Saklıdır  </p>
+        </div>
+    </div>
+
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="/Templete1/foxclore/layout/scripts/jquery.min.js"></script>
+    <script src="/Templete1/foxclore/layout/scripts/jquery.backtotop.js"></script>
+    <script src="/Templete1/foxclore/layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,24 @@
+﻿@model EntityLayer.Concrete.City
+@{
+    Layout = null;
+}
+
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+<h1>Yeni Şehir Ekleme Sayfası</h1>
+<br />
+@*üzerinde çalıştığım Action ismi,üzerinde çalıştığım controlller ismi,form method post olduğunda çalışsın*@
+@using (Html.BeginForm("AddCity", "City", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.Label("Şehir Adı")
+        @Html.TextBoxFor(x => x.CityName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CityName)
+        <br /><br />
+        @Html.Label("Açıklamayı Yazınız")
+        @Html.TextBoxFor(x => x.CityDescription, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.CityDescription)
+        <br /><br />
+        <button class="btn btn-info">Kaydet</button>
+    </div>
+}

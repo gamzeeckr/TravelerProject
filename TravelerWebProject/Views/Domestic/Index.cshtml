@@ -1,0 +1,81 @@
+﻿@using EntityLayer.Concrete
+@model List<Heading>
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+<!--
+Template Name: Foxclore
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+    <title>Foxclore</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="/Templete1/foxclore/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+
+
+</head>
+<body id="top">
+
+    @Html.Action("Menu")
+
+   
+    <div class="wrapper row3">
+        <main class="hoc container clear">
+            <!-- main body -->
+            <div class="content">
+                <!-- ################################################################################################ -->
+                <div id="gallery">
+                    <figure>
+                       
+                        <br /><br />
+                        <ul class="nospace group">
+                            @foreach (var item in Model)
+                            {
+                                <li class="one_third">
+                                    <figure>
+                                        <a class="imgover" href="/Content/ContentPage/@item.HeadingId"><img src="@item.HeadingImage" alt="" ></a>
+                                        <figcaption>
+                                            <a class="heading" href="/Content/ContentPage/@item.HeadingId">@item.HeadingName - @item.City.CityName</a>
+                                            <p>@item.HeadingDescription.Substring(0, 300)...</p>
+                                        </figcaption>
+                                    </figure>
+                                </li>
+                            }
+                        </ul>
+
+                    </figure>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <div class="wrapper row5" style="margin-top:200px;">
+        <div id="copyright" class="hoc clear">
+
+            <p class="center">&copy; 2021 - Tüm Hakları Saklıdır  </p>
+        </div>
+    </div>
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="/Templete1/foxclore/layout/scripts/jquery.min.js"></script>
+    <script src="/Templete1/foxclore/layout/scripts/jquery.backtotop.js"></script>
+    <script src="/Templete1/foxclore/layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
+
+
+

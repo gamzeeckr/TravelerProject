@@ -1,0 +1,24 @@
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\obj\Debug\EntityLayer.csprojAssemblyReference.cache
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\gamze\OneDrive\Masaüstü\Mvc Projesi\TravelerWebProject\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\obj\Debug\EntityLayer.csprojAssemblyReference.cache
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\gamze\OneDrive\Masaüstü\Yeni klasör (2)\TravelerWebProject\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
